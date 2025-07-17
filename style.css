@@ -1,5 +1,13 @@
 /* mobile first */
 /* ברירת מחדל: תפריט מוצג */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
 .desktop-only {
   display: none;
 }
@@ -351,5 +359,15 @@ h2 {
   .skill-bar {
     width: 90%;
     margin-top: 0.5rem;
+  }
+
+  /* Stack the contact section vertically on small screens */
+  .contact_container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact_form,
+  .information {
+    width: 100%;
   }
 }
